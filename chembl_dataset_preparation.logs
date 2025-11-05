@@ -1,0 +1,624 @@
+
+================================================================================
+Session start: 2025-09-14T13:36:10.314213
+[2025-09-14 13:36:10] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 13:36:10] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 13:36:10] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+
+================================================================================
+Session start: 2025-09-14T13:36:52.570548
+[2025-09-14 13:36:52] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 13:36:52] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 13:36:52] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 13:36:54] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 13:36:55] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 13:36:55] Fusion bioactivité+SMILES: n=1999
+[2025-09-14 13:38:01] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-14 13:38:01] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-14 13:38:18] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-14 13:38:18] Split scaffold: train=858, test=215
+[2025-09-14 13:38:19] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-14 13:38:19] Split cluster@0.6: train=847, test=226
+[2025-09-14 13:38:19] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-14 13:38:19] Split cluster@0.7: train=836, test=237
+[2025-09-14 13:38:20] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=952
+[2025-09-14 13:38:20] Parquet write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+[2025-09-14 13:38:20] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+
+================================================================================
+Session start: 2025-09-14T13:41:33.889141
+[2025-09-14 13:41:33] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 13:41:33] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 13:41:33] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 13:41:34] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 13:41:34] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+
+================================================================================
+Session start: 2025-09-14T13:41:53.262872
+[2025-09-14 13:41:53] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 13:41:53] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 13:41:53] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 13:41:53] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 13:41:53] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 13:41:53] Fusion bioactivité+SMILES: n=1999
+[2025-09-14 13:43:00] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-14 13:43:00] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-14 13:43:16] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-14 13:43:16] Split scaffold: train=858, test=215
+[2025-09-14 13:43:17] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-14 13:43:17] Split cluster@0.6: train=847, test=226
+[2025-09-14 13:43:17] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-14 13:43:17] Split cluster@0.7: train=836, test=237
+[2025-09-14 13:43:18] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=952
+[2025-09-14 13:43:18] Parquet write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+[2025-09-14 13:43:18] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-14 13:43:18] Split par scaffolds (Bemis–Murcko)
+[2025-09-14 13:43:19] Aucun SMILES en commun entre train et test
+[2025-09-14 13:43:19] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-14 13:47:45] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 400}, outer_score_mean(-RMSE)=-0.846269059605692
+[2025-09-14 13:47:45] Conformal prediction (régression)
+[2025-09-14 13:47:48] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-14 13:48:20] Clf best_params={'max_depth': 40, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8252041855496225
+[2025-09-14 13:48:20] Calibration des probabilités (isotonic/sigmoid)
+
+================================================================================
+Session start: 2025-09-14T13:51:25.884208
+[2025-09-14 13:51:25] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 13:51:25] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 13:51:25] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 13:51:26] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 13:51:26] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 13:51:26] Fusion bioactivité+SMILES: n=1999
+[2025-09-14 13:52:40] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-14 13:52:40] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-14 13:52:57] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-14 13:52:57] Split scaffold: train=858, test=215
+[2025-09-14 13:52:58] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-14 13:52:58] Split cluster@0.6: train=847, test=226
+[2025-09-14 13:52:58] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-14 13:52:58] Split cluster@0.7: train=836, test=237
+[2025-09-14 13:52:59] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=952
+[2025-09-14 13:52:59] Parquet write failed: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+[2025-09-14 13:52:59] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-14 13:52:59] Split par scaffolds (Bemis–Murcko)
+[2025-09-14 13:53:00] Aucun SMILES en commun entre train et test
+[2025-09-14 13:53:00] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-14 13:57:24] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 400}, outer_score_mean(-RMSE)=-0.8462690596056921
+[2025-09-14 13:57:24] Conformal prediction (régression)
+[2025-09-14 13:57:27] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-14 13:57:56] Clf best_params={'max_depth': 40, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8252041855496225
+[2025-09-14 13:57:56] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-14 13:57:56] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-14 13:57:57] Calcul des métriques (régression et tri moléculaire)
+[2025-09-14 13:57:57] REG: RMSE=0.814, R2=0.288, Spearman=0.554
+[2025-09-14 13:57:57] CLF: PR-AUC=0.885, EF@1%=1.414, EF@5%=1.414, Top-50=0.980, Top-100=0.890, BEDROC=0.638
+[2025-09-14 13:57:57] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.406
+
+================================================================================
+Session start: 2025-09-14T14:02:57.002457
+[2025-09-14 14:02:57] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 14:02:57] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 14:02:57] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 14:02:57] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 14:02:57] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 14:02:57] Fusion bioactivité+SMILES: n=1999
+[2025-09-14 14:04:08] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-14 14:04:08] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-14 14:04:26] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-14 14:04:26] Split scaffold: train=858, test=215
+[2025-09-14 14:04:27] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-14 14:04:27] Split cluster@0.6: train=847, test=226
+[2025-09-14 14:04:27] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-14 14:04:27] Split cluster@0.7: train=836, test=237
+[2025-09-14 14:04:28] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=952
+[2025-09-14 14:04:28] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-14 14:04:28] Split par scaffolds (Bemis–Murcko)
+[2025-09-14 14:04:30] Aucun SMILES en commun entre train et test
+[2025-09-14 14:04:30] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-14 14:08:51] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 400}, outer_score_mean(-RMSE)=-0.8462690596056921
+[2025-09-14 14:08:51] Conformal prediction (régression)
+[2025-09-14 14:08:54] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-14 14:09:20] Clf best_params={'max_depth': 40, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8252041855496225
+[2025-09-14 14:09:20] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-14 14:09:20] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-14 14:09:20] Calcul des métriques (régression et tri moléculaire)
+[2025-09-14 14:09:20] REG: RMSE=0.814, R2=0.288, Spearman=0.554
+[2025-09-14 14:09:20] CLF: PR-AUC=0.885, EF@1%=1.414, EF@5%=1.414, Top-50=0.980, Top-100=0.890, BEDROC=0.638
+[2025-09-14 14:09:20] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.406
+
+================================================================================
+Session start: 2025-09-14T14:39:45.485076
+[2025-09-14 14:39:45] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 14:39:45] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 14:39:45] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 14:39:45] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 14:39:45] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 14:39:46] Fusion bioactivité+SMILES: n=1999
+
+================================================================================
+Session start: 2025-09-14T14:40:06.909729
+[2025-09-14 14:40:06] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 14:40:06] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 14:40:06] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 14:40:07] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 14:40:07] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 14:40:07] Fusion bioactivité+SMILES: n=1999
+[2025-09-14 14:41:16] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-14 14:41:16] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-14 14:41:33] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313
+[2025-09-14 14:41:33] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-14 14:41:33] Split scaffold: train=858, test=215
+[2025-09-14 14:41:34] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-14 14:41:34] Split cluster@0.6: train=847, test=226
+[2025-09-14 14:41:34] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-14 14:41:34] Split cluster@0.7: train=836, test=237
+[2025-09-14 14:41:35] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-14 14:41:35] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-14 14:41:35] Split par scaffolds (Bemis–Murcko)
+[2025-09-14 14:41:37] Aucun SMILES en commun entre train et test
+[2025-09-14 14:41:37] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-14 14:47:29] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-14 14:47:29] Conformal prediction (régression)
+[2025-09-14 14:47:32] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-14 14:48:09] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-14 14:48:09] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-14 14:48:09] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-14 14:48:09] Calcul des métriques (régression et tri moléculaire)
+[2025-09-14 14:48:10] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-14 14:48:10] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-14 14:48:10] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-14T15:05:12.119490
+[2025-09-14 15:05:12] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 15:05:12] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 15:05:12] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 15:05:12] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 15:05:12] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 15:05:12] Fusion bioactivité+SMILES: n=1999
+[2025-09-14 15:06:19] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-14 15:06:19] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-14 15:06:38] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313
+[2025-09-14 15:06:38] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-14 15:06:38] Split scaffold: train=858, test=215
+[2025-09-14 15:06:39] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-14 15:06:39] Split cluster@0.6: train=847, test=226
+[2025-09-14 15:06:39] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-14 15:06:39] Split cluster@0.7: train=836, test=237
+[2025-09-14 15:06:40] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-14 15:06:41] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-14 15:06:41] Split par scaffolds (Bemis–Murcko)
+[2025-09-14 15:06:42] Aucun SMILES en commun entre train et test
+[2025-09-14 15:06:42] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-14 15:12:35] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-14 15:12:35] Conformal prediction (régression)
+[2025-09-14 15:12:37] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-14 15:13:13] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-14 15:13:13] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-14 15:13:13] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-14 15:13:14] Calcul des métriques (régression et tri moléculaire)
+[2025-09-14 15:13:14] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-14 15:13:14] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-14 15:13:14] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-14T15:17:46.864345
+[2025-09-14 15:17:46] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-14 15:17:46] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-14 15:17:46] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-14 15:17:47] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-14 15:17:47] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-14 15:17:47] Fusion bioactivité+SMILES: n=1999
+[2025-09-14 15:19:16] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-14 15:19:16] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-14 15:19:34] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313
+[2025-09-14 15:19:35] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-14 15:19:35] Split scaffold: train=858, test=215
+[2025-09-14 15:19:35] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-14 15:19:35] Split cluster@0.6: train=847, test=226
+[2025-09-14 15:19:36] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-14 15:19:36] Split cluster@0.7: train=836, test=237
+[2025-09-14 15:19:37] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-14 15:19:37] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-14 15:19:37] Split par scaffolds (Bemis–Murcko)
+[2025-09-14 15:19:38] Aucun SMILES en commun entre train et test
+[2025-09-14 15:19:38] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-14 15:25:11] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-14 15:25:11] Conformal prediction (régression)
+[2025-09-14 15:25:13] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-14 15:25:43] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-14 15:25:43] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-14 15:25:43] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-14 15:25:43] Calcul des métriques (régression et tri moléculaire)
+[2025-09-14 15:25:43] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-14 15:25:43] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-14 15:25:43] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-15T21:12:16.783684
+[2025-09-15 21:12:16] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-15 21:12:16] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-15 21:12:16] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+
+================================================================================
+Session start: 2025-09-15T21:13:05.247326
+[2025-09-15 21:13:05] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-15 21:13:05] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-15 21:13:05] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-15 21:13:21] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-15 21:13:21] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-15 21:13:34] Fusion bioactivité+SMILES: n=1999
+[2025-09-15 21:14:37] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-15 21:14:37] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-15 21:14:51] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313
+[2025-09-15 21:14:51] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-15 21:14:51] Split scaffold: train=858, test=215
+[2025-09-15 21:14:52] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-15 21:14:52] Split cluster@0.6: train=847, test=226
+[2025-09-15 21:14:52] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-15 21:14:52] Split cluster@0.7: train=836, test=237
+[2025-09-15 21:14:53] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-15 21:14:53] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-15 21:14:53] Split par scaffolds (Bemis–Murcko)
+[2025-09-15 21:14:54] Aucun SMILES en commun entre train et test
+[2025-09-15 21:14:54] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-15 21:20:56] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-15 21:20:56] Conformal prediction (régression)
+[2025-09-15 21:20:59] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-15 21:21:39] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-15 21:21:39] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-15 21:21:40] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-15 21:21:40] Calcul des métriques (régression et tri moléculaire)
+[2025-09-15 21:21:40] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-15 21:21:40] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-15 21:21:40] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-15T21:47:38.486054
+[2025-09-15 21:47:38] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-15 21:47:38] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-15 21:47:38] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-15 21:47:38] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-15 21:47:38] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-15 21:47:38] Fusion bioactivité+SMILES: n=1999
+[2025-09-15 21:48:39] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-15 21:48:39] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-15 21:48:53] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313
+[2025-09-15 21:48:54] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-15 21:48:54] Split scaffold: train=858, test=215
+[2025-09-15 21:48:54] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-15 21:48:54] Split cluster@0.6: train=847, test=226
+[2025-09-15 21:48:55] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-15 21:48:55] Split cluster@0.7: train=836, test=237
+[2025-09-15 21:48:55] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-15 21:48:56] Sauvegarde dataset: X_features.npy, y_labels.npy (binary), y_reg.npy, y_labels_3class.npy, chembl_dataset_full.parquet
+[2025-09-15 21:48:56] Split par scaffolds (Bemis–Murcko)
+[2025-09-15 21:48:56] Aucun SMILES en commun entre train et test
+[2025-09-15 21:48:56] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-15 21:55:58] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-15 21:55:58] Conformal prediction (régression)
+[2025-09-15 21:56:01] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-15 21:56:44] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-15 21:56:44] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-15 21:56:45] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-15 21:56:45] Calcul des métriques (régression et tri moléculaire)
+[2025-09-15 21:56:45] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-15 21:56:45] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-15 21:56:45] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-15T22:36:30.635184
+[2025-09-15 22:36:30] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-15 22:36:30] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-15 22:36:30] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-15 22:36:30] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-15 22:36:30] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-15 22:36:31] Fusion bioactivité+SMILES: n=1999
+[2025-09-15 22:37:33] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-15 22:37:33] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-15 22:37:47] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313
+[2025-09-15 22:37:47] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-15 22:37:47] Split scaffold: train=858, test=215
+[2025-09-15 22:37:48] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-15 22:37:48] Split cluster@0.6: train=847, test=226
+[2025-09-15 22:37:48] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-15 22:37:48] Split cluster@0.7: train=836, test=237
+[2025-09-15 22:37:48] Doublons: lignes avec group_size>1 = 16 | groupe max = 3
+[2025-09-15 22:37:48] scaffold_split: xhash_cross_fold_violations=0
+[2025-09-15 22:37:48] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-15 22:37:48] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-09-15 22:37:48] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-15 22:37:48] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-09-15 22:37:48] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-15 22:37:49] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-15 22:37:49] Split par scaffolds (Bemis–Murcko)
+[2025-09-15 22:37:50] Aucun SMILES en commun entre train et test
+[2025-09-15 22:37:50] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-15 22:44:01] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-15 22:44:01] Conformal prediction (régression)
+[2025-09-15 22:44:04] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-15 22:44:42] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-15 22:44:42] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-15 22:44:43] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-15 22:44:43] Calcul des métriques (régression et tri moléculaire)
+[2025-09-15 22:44:43] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-15 22:44:43] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-15 22:44:43] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-16T20:08:10.597820
+[2025-09-16 20:08:10] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-16 20:08:10] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-16 20:08:10] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-16 20:08:10] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-16 20:08:10] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-16 20:08:11] Fusion bioactivité+SMILES: n=1999
+[2025-09-16 20:09:13] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-16 20:09:13] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-16 20:09:27] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313 (cible [0.005, 0.05])
+[2025-09-16 20:09:27] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 20:09:27] Split scaffold: train=858, test=215
+[2025-09-16 20:09:27] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 20:09:27] Split cluster@0.6: train=847, test=226
+[2025-09-16 20:09:28] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 20:09:28] Split cluster@0.7: train=836, test=237
+[2025-09-16 20:09:28] Doublons: groupes duplicatifs=7 | taille max groupe=3
+[2025-09-16 20:09:28] scaffold_split: xhash_cross_fold_violations=0
+[2025-09-16 20:09:28] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 20:09:28] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-09-16 20:09:28] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 20:09:28] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-09-16 20:09:28] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 20:09:29] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-16 20:09:29] Split par scaffolds (Bemis–Murcko)
+[2025-09-16 20:09:30] Aucun SMILES en commun entre train et test
+[2025-09-16 20:09:30] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-16 20:16:01] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-16 20:16:01] Conformal prediction (régression)
+[2025-09-16 20:16:04] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-16 20:16:44] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-16 20:16:44] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-16 20:16:44] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-16 20:16:45] Calcul des métriques (régression et tri moléculaire)
+[2025-09-16 20:16:45] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-16 20:16:45] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-16 20:16:45] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-16T20:41:13.914395
+[2025-09-16 20:41:13] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-16 20:41:13] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-16 20:41:13] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-16 20:41:14] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-16 20:41:14] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-16 20:41:14] Fusion bioactivité+SMILES: n=1999
+[2025-09-16 20:42:15] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-16 20:42:15] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-16 20:42:29] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313 (cible [0.005, 0.05])
+[2025-09-16 20:42:29] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 20:42:29] Split scaffold: train=858, test=215
+[2025-09-16 20:42:30] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 20:42:30] Split cluster@0.6: train=847, test=226
+[2025-09-16 20:42:30] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 20:42:30] Split cluster@0.7: train=836, test=237
+[2025-09-16 20:42:30] Doublons: groupes duplicatifs=7 | taille max groupe=3
+[2025-09-16 20:42:30] scaffold_split: xhash_cross_fold_violations=0
+[2025-09-16 20:42:30] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 20:42:30] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-09-16 20:42:30] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 20:42:30] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-09-16 20:42:30] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 20:42:31] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-16 20:42:31] Split par scaffolds (Bemis–Murcko)
+[2025-09-16 20:42:32] Aucun SMILES en commun entre train et test
+[2025-09-16 20:42:32] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-16 20:48:36] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.847724142919694
+[2025-09-16 20:48:36] Conformal prediction (régression)
+[2025-09-16 20:48:39] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-16 20:49:13] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-16 20:49:13] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-16 20:49:13] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-16 20:49:14] Calcul des métriques (régression et tri moléculaire)
+[2025-09-16 20:49:14] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-16 20:49:14] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-16 20:49:14] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-16T20:51:00.420488
+[2025-09-16 20:51:00] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-16 20:51:00] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-16 20:51:00] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-16 20:51:00] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-16 20:51:00] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-16 20:51:00] Fusion bioactivité+SMILES: n=1999
+[2025-09-16 20:52:02] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-16 20:52:02] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-16 20:52:15] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313 (cible [0.005, 0.05])
+[2025-09-16 20:52:16] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 20:52:16] Split scaffold: train=858, test=215
+[2025-09-16 20:52:16] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 20:52:16] Split cluster@0.6: train=847, test=226
+[2025-09-16 20:52:16] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 20:52:16] Split cluster@0.7: train=836, test=237
+[2025-09-16 20:52:17] Doublons: groupes duplicatifs=7 | taille max groupe=3
+[2025-09-16 20:52:17] scaffold_split: xhash_cross_fold_violations=0
+[2025-09-16 20:52:17] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 20:52:17] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-09-16 20:52:17] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 20:52:17] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-09-16 20:52:17] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 20:52:18] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-16 20:52:18] Split par scaffolds (Bemis–Murcko)
+[2025-09-16 20:52:19] Aucun SMILES en commun entre train et test
+[2025-09-16 20:52:19] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-16 20:58:31] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-16 20:58:31] Conformal prediction (régression)
+[2025-09-16 20:58:33] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-16 20:59:08] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-16 20:59:08] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-16 20:59:08] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-16 20:59:09] Calcul des métriques (régression et tri moléculaire)
+[2025-09-16 20:59:09] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-16 20:59:09] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-16 20:59:09] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+
+================================================================================
+Session start: 2025-09-16T21:02:38.283735
+[2025-09-16 21:02:38] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-16 21:02:38] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-16 21:02:38] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-16 21:02:38] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-16 21:02:38] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-16 21:02:38] Fusion bioactivité+SMILES: n=1999
+[2025-09-16 21:03:39] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-16 21:03:39] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-16 21:03:52] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313 (cible [0.005, 0.05])
+[2025-09-16 21:03:53] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 21:03:53] Split scaffold: train=858, test=215
+[2025-09-16 21:03:53] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 21:03:53] Split cluster@0.6: train=847, test=226
+[2025-09-16 21:03:54] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 21:03:54] Split cluster@0.7: train=836, test=237
+[2025-09-16 21:03:54] Doublons: groupes duplicatifs=7 | taille max groupe=3
+[2025-09-16 21:03:54] scaffold_split: xhash_cross_fold_violations=0
+[2025-09-16 21:03:54] Split exporté: data\splits\scaffold_split.json | hash=b822c8591329b08eeb76f09de51bd94105fd643fd014548a574a384009bfad7c
+[2025-09-16 21:03:54] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-09-16 21:03:54] Split exporté: data\splits\cluster_split_t06.json | hash=fd20e03587789bcfeca7adadbc31bef2e76f24cff59b44e2bf6250e994b8fa70
+[2025-09-16 21:03:54] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-09-16 21:03:54] Split exporté: data\splits\cluster_split_t07.json | hash=a2b21fb2211e6875e9f02182c7763d73a2aab2f377f5b801d85ddd642520bb8e
+[2025-09-16 21:03:55] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-16 21:03:55] Split par scaffolds (Bemis–Murcko)
+[2025-09-16 21:03:55] Aucun SMILES en commun entre train et test
+[2025-09-16 21:03:55] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-16 21:09:52] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-09-16 21:09:52] Conformal prediction (régression)
+[2025-09-16 21:09:54] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-16 21:10:27] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-16 21:10:27] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-16 21:10:27] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-16 21:10:28] Calcul des métriques (régression et tri moléculaire)
+[2025-09-16 21:10:28] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-16 21:10:28] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-16 21:10:28] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+[2025-09-16 21:10:28] Vérifs express OK | n=1073, p=1625
+
+================================================================================
+Session start: 2025-09-19T18:35:38.595143
+[2025-09-19 18:35:38] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-09-19 18:35:38] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-09-19 18:35:38] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-09-19 18:36:33] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-09-19 18:36:33] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-09-19 18:36:48] Fusion bioactivité+SMILES: n=1999
+[2025-09-19 18:37:45] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-09-19 18:37:45] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-09-19 18:37:58] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313 (cible [0.005, 0.05])
+[2025-09-19 18:37:58] Split exporté: data\splits\scaffold_split.json | hash=dfff318c846b3148aadde0029bcb26f6aa38acfc524356ff0da6fe1236a19614
+[2025-09-19 18:37:58] Split scaffold: train=858, test=215
+[2025-09-19 18:37:58] Split exporté: data\splits\cluster_split_t06.json | hash=a777a0237c97016ee8fe900216f44938d08fd768d953e480ecc3a37fdd5c4fd3
+[2025-09-19 18:37:58] Split cluster@0.6: train=847, test=226
+[2025-09-19 18:37:59] Split exporté: data\splits\cluster_split_t07.json | hash=5fe762fd5c1d251d424f14512e32ab61dc1d51c354177df8dadbeededee78acc
+[2025-09-19 18:37:59] Split cluster@0.7: train=836, test=237
+[2025-09-19 18:37:59] Doublons: groupes duplicatifs=7 | taille max groupe=3
+[2025-09-19 18:37:59] scaffold_split: xhash_cross_fold_violations=0
+[2025-09-19 18:37:59] Split exporté: data\splits\scaffold_split.json | hash=dfff318c846b3148aadde0029bcb26f6aa38acfc524356ff0da6fe1236a19614
+[2025-09-19 18:37:59] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-09-19 18:37:59] Split exporté: data\splits\cluster_split_t06.json | hash=a777a0237c97016ee8fe900216f44938d08fd768d953e480ecc3a37fdd5c4fd3
+[2025-09-19 18:37:59] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-09-19 18:37:59] Split exporté: data\splits\cluster_split_t07.json | hash=5fe762fd5c1d251d424f14512e32ab61dc1d51c354177df8dadbeededee78acc
+[2025-09-19 18:38:00] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-09-19 18:38:00] Split par scaffolds (Bemis–Murcko)
+[2025-09-19 18:38:01] Aucun SMILES en commun entre train et test
+[2025-09-19 18:38:01] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-09-19 18:43:17] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.847724142919694
+[2025-09-19 18:43:17] Conformal prediction (régression)
+[2025-09-19 18:43:19] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-09-19 18:43:48] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-09-19 18:43:48] Calibration des probabilités (isotonic/sigmoid)
+[2025-09-19 18:43:49] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-09-19 18:43:49] Calcul des métriques (régression et tri moléculaire)
+[2025-09-19 18:43:49] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-09-19 18:43:49] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-09-19 18:43:49] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+[2025-09-19 18:43:49] Vérifs express OK | n=1073, p=1625
+
+================================================================================
+Session start: 2025-11-05T09:30:30.153375
+[2025-11-05 09:30:30] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-11-05 09:30:30] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-11-05 09:30:30] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-11-05 09:31:06] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-11-05 09:31:07] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-11-05 09:31:30] Fusion bioactivité+SMILES: n=1999
+[2025-11-05 09:35:59] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-11-05 09:35:59] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-11-05 09:37:01] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313 (cible [0.005, 0.05])
+[2025-11-05 09:37:03] Split exporté: data\splits\scaffold_split.json | hash=dfff318c846b3148aadde0029bcb26f6aa38acfc524356ff0da6fe1236a19614
+[2025-11-05 09:37:03] Split scaffold: train=858, test=215
+[2025-11-05 09:37:05] Split exporté: data\splits\cluster_split_t06.json | hash=a777a0237c97016ee8fe900216f44938d08fd768d953e480ecc3a37fdd5c4fd3
+[2025-11-05 09:37:05] Split cluster@0.6: train=847, test=226
+[2025-11-05 09:37:07] Split exporté: data\splits\cluster_split_t07.json | hash=5fe762fd5c1d251d424f14512e32ab61dc1d51c354177df8dadbeededee78acc
+[2025-11-05 09:37:07] Split cluster@0.7: train=836, test=237
+[2025-11-05 09:37:07] Doublons: groupes duplicatifs=7 | taille max groupe=3
+[2025-11-05 09:37:07] scaffold_split: xhash_cross_fold_violations=0
+[2025-11-05 09:37:07] Split exporté: data\splits\scaffold_split.json | hash=dfff318c846b3148aadde0029bcb26f6aa38acfc524356ff0da6fe1236a19614
+[2025-11-05 09:37:07] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-11-05 09:37:07] Split exporté: data\splits\cluster_split_t06.json | hash=a777a0237c97016ee8fe900216f44938d08fd768d953e480ecc3a37fdd5c4fd3
+[2025-11-05 09:37:07] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-11-05 09:37:07] Split exporté: data\splits\cluster_split_t07.json | hash=5fe762fd5c1d251d424f14512e32ab61dc1d51c354177df8dadbeededee78acc
+[2025-11-05 09:37:12] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-11-05 09:37:12] Split par scaffolds (Bemis–Murcko)
+[2025-11-05 09:37:17] Aucun SMILES en commun entre train et test
+[2025-11-05 09:37:17] Nested CV pour RandomForestRegressor (objectif: pIC50)
+
+================================================================================
+Session start: 2025-11-05T20:02:14.957441
+[2025-11-05 20:02:15] Début préparation dataset | target=CHEMBL279 | limit=2000
+[2025-11-05 20:02:15] Versions | pandas=2.0.3, numpy=1.24.3, rdkit=2023.03.2, sklearn=1.3.0, chembl_webresource_client=0.10.8
+[2025-11-05 20:02:15] ChEMBL status unavailable: 'NewClient' object has no attribute 'status'
+[2025-11-05 20:02:15] Bioactivité téléchargée: n=2001 | filtres: type=IC50, relation='=', assay_type='B'
+[2025-11-05 20:02:15] Nettoyage: pIC50 range=[4,10], classes(6.5)=binary(>=6.5), organisme homogénéisé si possible
+[2025-11-05 20:02:15] Fusion bioactivité+SMILES: n=1999
+[2025-11-05 20:03:18] Qualité chimique: rejetés=718/1999 | raisons={'anil_di_alk_A(478)': 21, 'azo_A(324)': 2, 'diazo_group': 2, 'nitro_group': 5, 'Oxygen-nitrogen_single_bond': 80, 'azo_aryl': 1, '2-halo_pyridine': 5, 'Michael_acceptor_1': 67, 'Aliphatic_long_chain': 384, 'isolated_alkene': 8, 'anil_no_alk(40)': 1, 'aniline': 15, 'Polycyclic_aromatic_hydrocarbon_3': 1, 'N_oxide': 3, 'quaternary_nitrogen_1': 3, 'catechol_A(92)': 2, 'aldehyde': 6, 'beta-keto/anhydride': 2, 'catechol': 3, 'hydroquinone': 2, 'anil_di_alk_C(246)': 1, 'dyes5A(27)': 35, 'phthalimide': 9, 'charged_oxygen_or_sulfur_atoms': 2, 'non_ring_CH2O_acetal': 1, 'Thiocarbonyl_group': 7, 'oxime_1': 2, 'cyanate_/aminonitrile_/thiocyanate': 2, 'enamine': 2, 'het-C-het_not_in_ring': 1, 'non_ring_acetal': 1, 'benzidine_like': 5, 'ene_five_het_A(201)': 20, 'imine_1': 29, 'imine_2': 2, 'gte_4_basic_N': 1, 'N-hydroxyl_pyridine': 1, 'alkyl_halide': 20, 'polyene': 1, 'quinone_A(370)': 200, 'ene_one_hal(17)': 25, 'chinone_1': 195, 'bis_keto_olefin': 8, 'Three-membered_heterocycle': 2, 'aziridine_diazirine': 2, 'halogenated_ring_1': 7, 'halogenated_ring_2': 6, 'triple_bond': 82, 'diketo_group': 1, 'alpha_dicarbonyl': 1, 'biotin_analogue': 3, 'Azido_group': 1, 'quaternary_nitrogen_3': 1, 'azide': 1, 'conjugated_nitrile_group': 1, 'betalactam': 1, 'oxime': 1, 'ene_five_het_K(4)': 1}
+[2025-11-05 20:03:18] Agrégation par InChIKey: n_unique=1073 | réplicats incohérents retirés=14 (std>0.5)
+[2025-11-05 20:03:33] Features: before_VT=1625, after_VT=1625, morgan_density=0.0313 (cible [0.005, 0.05])
+[2025-11-05 20:03:33] Split exporté: data\splits\scaffold_split.json | hash=dfff318c846b3148aadde0029bcb26f6aa38acfc524356ff0da6fe1236a19614
+[2025-11-05 20:03:33] Split scaffold: train=858, test=215
+[2025-11-05 20:03:34] Split exporté: data\splits\cluster_split_t06.json | hash=a777a0237c97016ee8fe900216f44938d08fd768d953e480ecc3a37fdd5c4fd3
+[2025-11-05 20:03:34] Split cluster@0.6: train=847, test=226
+[2025-11-05 20:03:34] Split exporté: data\splits\cluster_split_t07.json | hash=5fe762fd5c1d251d424f14512e32ab61dc1d51c354177df8dadbeededee78acc
+[2025-11-05 20:03:34] Split cluster@0.7: train=836, test=237
+[2025-11-05 20:03:34] Doublons: groupes duplicatifs=7 | taille max groupe=3
+[2025-11-05 20:03:34] scaffold_split: xhash_cross_fold_violations=0
+[2025-11-05 20:03:34] Split exporté: data\splits\scaffold_split.json | hash=dfff318c846b3148aadde0029bcb26f6aa38acfc524356ff0da6fe1236a19614
+[2025-11-05 20:03:34] cluster_split_t06: xhash_cross_fold_violations=0
+[2025-11-05 20:03:34] Split exporté: data\splits\cluster_split_t06.json | hash=a777a0237c97016ee8fe900216f44938d08fd768d953e480ecc3a37fdd5c4fd3
+[2025-11-05 20:03:34] cluster_split_t07: xhash_cross_fold_violations=0
+[2025-11-05 20:03:34] Split exporté: data\splits\cluster_split_t07.json | hash=5fe762fd5c1d251d424f14512e32ab61dc1d51c354177df8dadbeededee78acc
+[2025-11-05 20:03:35] Dataset sauvegardé dans data/ | n_samples=1073 | n_features=1625
+[2025-11-05 20:03:35] Split par scaffolds (Bemis–Murcko)
+[2025-11-05 20:03:36] Aucun SMILES en commun entre train et test
+[2025-11-05 20:03:36] Nested CV pour RandomForestRegressor (objectif: pIC50)
+[2025-11-05 20:09:47] Reg best_params={'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(-RMSE)=-0.8477241429196939
+[2025-11-05 20:09:47] Conformal prediction (régression)
+[2025-11-05 20:09:49] Nested CV pour RandomForestClassifier (cutoff 6.5)
+[2025-11-05 20:10:29] Clf best_params={'max_depth': None, 'min_samples_leaf': 1, 'n_estimators': 200}, outer_score_mean(AP)=0.8278068930292115
+[2025-11-05 20:10:29] Calibration des probabilités (isotonic/sigmoid)
+[2025-11-05 20:10:29] Calcul du domaine d'applicabilité (Tanimoto NN)
+[2025-11-05 20:10:29] Calcul des métriques (régression et tri moléculaire)
+[2025-11-05 20:10:29] REG: RMSE=0.808, R2=0.297, Spearman=0.556
+[2025-11-05 20:10:29] CLF: PR-AUC=0.874, EF@1%=1.414, EF@5%=1.414, Top-50=0.900, Top-100=0.880, BEDROC=0.589
+[2025-11-05 20:10:29] AD: Similarité NN moyenne=0.686, Confiance moyenne ajustée=0.404
+[2025-11-05 20:10:30] Vérifs express OK | n=1073, p=1625
