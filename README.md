@@ -616,8 +616,8 @@ Ce projet est distribué sous licence MIT. Voir `LICENSE` pour plus de détails.
 ## 📧 Contact
 
 Pour toute question ou collaboration :
-- Email : [votre-email]
-- GitHub : [votre-profil]
+- Email : nathan.legrand@student.junia.com
+- GitHub : https://github.com/txsoo/random-forest-prototype
 
 ---
 
