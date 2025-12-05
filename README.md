@@ -1,8 +1,11 @@
-# Hit Identificator - Prédiction d'Activité Biologique par Machine Learning
+# Hit Identificator - Prédiction d'Activité Biologique par Machine Learning (HEI3)
 
 ## 📋 Vue d'ensemble
 
-**Aragorn** est un pipeline de machine learning spécialisé dans l'**identification de hits en drug discovery**. Le projet utilise des données bioactives de ChEMBL pour entraîner un modèle Random Forest capable de prédire l'activité biologique de molécules candidates contre une cible thérapeutique (par défaut : COX-2 / Cyclooxygenase-2).
+Ce dépôt s’inscrit dans le cadre du projet B-Live HEI.
+
+**Aragorn** est un pipeline de machine learning dédié à l’identification de hits en drug discovery. Le projet utilise des données bioactives issues de ChEMBL afin d’entraîner un modèle Random Forest capable de prédire l’activité biologique de molécules candidates contre une cible thérapeutique.
+La cible par défaut est l’enzyme COX-2 (Cyclooxygenase-2).
 
 ### 🎯 Objectif principal
 Automatiser la priorisation de molécules candidates lors du criblage virtuel en prédisant leur activité biologique (actif/inactif) à partir de leur structure chimique.
